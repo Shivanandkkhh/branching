@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Psedo selectors and attribut n th child</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 23px;
+            border: 2px solid red;
+        }
+       a[target] {
+        font-size: 40px;
+        color: rgb(41, 250, 194);
+        text-decoration: none;
+       }
+       a[target="_top"] {
+        font-size: 20px;
+        color: rgb(250, 205, 41);
+       }
+    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet veritatis quas magnam qui. Sed architecto fugit ad nisi perspiciatis rerum adipisci? Quidem, ut placeat iure ipsam illum facilis quasi.
-        make it commit kjdfnvnfdvndjv
-    </p>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://google.com" target="_top">Go to google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="ENter your name">
+            <input type="password" placeholder="ENter your pass">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+        </ul>
+    </div>
+    
 </body>
 </html>
